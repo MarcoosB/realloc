@@ -11,6 +11,9 @@ public class Logro{
     public LogrosTitle getLogrosTitle(){return logrosTitle;}
     public EstadoDeAcceso getEstadoDeAcceso(){return estadoDeAcceso;}
     public void setEstadoDeAcceso(EstadoDeAcceso estadoDeAcceso){this.estadoDeAcceso=estadoDeAcceso;}
+    public String getDescripcion() {
+        return descripcion;
+    }
     @Override
     public String toString() {
         return "{" +
