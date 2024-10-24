@@ -4391,8 +4391,9 @@ public class Historia {
 
  public void pagina284() {
 
-  String pag85 = "Empezaron a dar vuelta esa idea en su cabeza. Al trabajar juntos, podían ser sueños relacionados a las situaciones en las que se veían envueltos, sí. Pero todo esto era demasiado similar, más que una coincidencia o una consecuencia del subconsciente. \n" +
-          "Era un mensaje, un recuerdo.\n";
+  String pag85 = "Finalmente, Manuel rompió el silencio.\n" +
+          "—En estos últimos días tuve un sueño muy recurrente. En ellos, estamos en la orilla del Río Yapeyú. Ahí, entre los matorrales, encontramos el cuerpo de un chico, algo más joven que vos. \n" +
+          "Esta muerto, frío, sin signos vitales ni color en su piel. Pero sus ojos se mueven como si estuviera en un trance.\n";
   gm.ui.crearEscenarioDosPersonajes(284, pag85, Fondos.F_OFICINA, Principales.M_SERIO, Principales.P_FRENTE, "285", "283");
   admin.getPlayer(key).setPuntoGuardado(284);
   admin.guardarPLayers();
@@ -4401,10 +4402,9 @@ public class Historia {
 
  public void pagina285() {
 
-  String pag85 = "Finalmente, Manuel rompió el silencio.\n" +
-          "—En estos últimos días tuve un sueño muy recurrente. En ellos, estamos en la orilla del Río Yapeyú. Ahí, entre los matorrales, encontramos el cuerpo de un chico, algo más joven que vos. \n" +
-          "Esta muerto, frío, sin signos vitales ni color en su piel. Pero sus ojos se mueven como si estuviera en un trance.\n";
-  gm.ui.crearEscenarioDosPersonajes(285, pag85, Fondos.F_OFICINA, Principales.M_SERIO, Principales.P_FRENTE, "286", "284");
+  String pag85 = "Sin decir nada, Paz se levantó y empezó a caminar hacia la salida, dejando a Manuel sorprendido.\n" +
+          "—¿Paz? ¿Qué te pasó?\n";
+  gm.ui.crearEscenarioDosPersonajes(285, pag85, Fondos.F_OFICINA, Principales.P_ESPALDA, Principales.M_CEJA_ARQUEADA, "286", "284");
   admin.getPlayer(key).setPuntoGuardado(285);
   admin.guardarPLayers();
 
@@ -4412,9 +4412,10 @@ public class Historia {
 
  public void pagina286() {
 
-  String pag85 = "Sin decir nada, Paz se levantó y empezó a caminar hacia la salida, dejando a Manuel sorprendido.\n" +
-          "—¿Paz? ¿Qué te pasó?\n";
-  gm.ui.crearEscenarioDosPersonajes(286, pag85, Fondos.F_OFICINA, Principales.P_ESPALDA, Principales.M_CEJA_ARQUEADA, "287", "285");
+  String pag85 = "—Es el mismo sueño que vengo teniendo hace una semana. Y creo que, frente a eso, lo mínimo que puedo hacer es acercarme a ver. Además, después de lo que paso me vendría bien despejar la mente un poco. A lo sumo que puede pasar ¿que no encontremos nada?\n" +
+          "Y con eso dicho, se dio la vuelta y fue a su auto. \n" +
+          "Manuel lo dudo un momento y sacudiendo su cabeza, como si ya se arrepintiera solo de pensar que esto era posible, se levantó y apuro el paso para alcanzar a su amiga.\n";
+  gm.ui.crearEscenarioDosPersonajes(286, pag85, Fondos.F_OFICINA, Principales.P_DADA_VUELTA, Principales.M_CEJA_ARQUEADA, "287", "285");
   admin.getPlayer(key).setPuntoGuardado(286);
   admin.guardarPLayers();
 
@@ -4422,10 +4423,9 @@ public class Historia {
 
  public void pagina287() {
 
-  String pag85 = "—Es el mismo sueño que vengo teniendo hace una semana. Y creo que, frente a eso, lo mínimo que puedo hacer es acercarme a ver. Además, después de lo que paso me vendría bien despejar la mente un poco. A lo sumo que puede pasar ¿que no encontremos nada?\n" +
-          "Y con eso dicho, se dio la vuelta y fue a su auto. \n" +
-          "Manuel lo dudo un momento y sacudiendo su cabeza, como si ya se arrepintiera solo de pensar que esto era posible, se levantó y apuro el paso para alcanzar a su amiga.\n";
-  gm.ui.crearEscenarioDosPersonajes(287, pag85, Fondos.F_OFICINA, Principales.P_DADA_VUELTA, Principales.M_CEJA_ARQUEADA, "288", "286");
+  String pag85 = "Abriste tus ojos, quedando enceguecido ante una potente luz blanca que envolvía el lugar. Todo lo que recordabas era la discusión con Gabriel y luego…\n" +
+          "Con tus manos tanteaste tu torso en búsqueda de la herida provocada por la cuchilla, pero no estaba ahí ¿estabas muerto? Miraste en todas direcciones, pero todo el lugar era un infinito vacío y de un blanco brillante, así que esta parecía la opción más acertada.\n";
+  gm.ui.crearEscenarioSolo(287, pag85, Fondos.F_LIMBO, "288", "286");
   admin.getPlayer(key).setPuntoGuardado(287);
   admin.guardarPLayers();
 
@@ -4433,102 +4433,255 @@ public class Historia {
 
  public void pagina288() {
 
-  String pag85 = "—Es el mismo sueño que vengo teniendo hace una semana. Y creo que, frente a eso, lo mínimo que puedo hacer es acercarme a ver. Además, después de lo que paso me vendría bien despejar la mente un poco. A lo sumo que puede pasar ¿que no encontremos nada?\n" +
-          "Y con eso dicho, se dio la vuelta y fue a su auto. \n" +
-          "Manuel lo dudo un momento y sacudiendo su cabeza, como si ya se arrepintiera solo de pensar que esto era posible, se levantó y apuro el paso para alcanzar a su amiga.\n";
-  gm.ui.crearEscenarioSolo(287, pag85, Fondos.F_CIELO, "288", "286");
-  admin.getPlayer(key).setPuntoGuardado(287);
+  String pag85 = "Te levantaste y viste como desde lejos se acercaba alguien caminando, pero no podías distinguirlo entre toda la luz.\n" +
+          "—¿Dios? ¿o sos un ángel?\n" +
+          "La figura río y cuando por fin llegó a donde estabas, pudiste reconocerte.\n";
+  gm.ui.crearEscenarioSolo(288, pag85, Fondos.F_LIMBO, "289", "287");
+  admin.getPlayer(key).setPuntoGuardado(288);
   admin.guardarPLayers();
 
  }
 
  public void pagina289() {
 
+  String pag85 = "—No la pegas nunca, eh. No, no soy Dios, pero estuviste muy cerca de conocerlo— pasó caminando a tu lado y te hablo por encima del hombro—. ¿Me acompañas?\n" +
+          "El Damián del futuro y vos caminaron un rato por el lugar, que parecía no tener principio ni final. Andaban en silencio, sin rumbo aparente.\n";
+  gm.ui.crearEscenarioFiguraVolteada(289, pag85, Fondos.F_LIMBO, Principales.D_DADO_VUELTA,"290", "288");
+  admin.getPlayer(key).setPuntoGuardado(289);
+  admin.guardarPLayers();
+
  }
 
  public void pagina290() {
+
+  String pag85 = "—¿Estoy muerto?\n" +
+          "—Ambos lo estamos, sí. Pero vos digamos que no del todo.\n" +
+          "—Mirtha— dijiste recordando tu encuentro con la mujer y la carta que te había dado.\n" +
+          "—“Altera Ocassio”. U otra oportunidad, si lo traducimos del latín. Un artefacto invaluable, tenés que tener algo especial para que haya decidido dártelo.\n" +
+          "—¿Vos no tenías una? — la figura te negó con la cabeza mientras continuaban la marcha— ¿Y entonces porque estamos acá? ¿No sirvió acaso?\n";
+  gm.ui.crearEscenarioUnPersonaje(290, pag85, Fondos.F_LIMBO, Principales.D_COSTADO,"291", "289");
+  admin.getPlayer(key).setPuntoGuardado(290);
+  admin.guardarPLayers();
 
  }
 
  public void pagina291() {
 
+  String pag85 = "—Muy por el contrario, Dami, por eso es mismo es que estamos acá, porque tenes otra oportunidad. Queda en vos tomarla o no, es tu decisión la de volver a terminar lo que empezaste o unirte a los demás.\n" +
+          "—¿Qué demás? Me empieza a cansar un poco tu ambigüedad y lo sabiondo que te portas, ¿sabes?\n" +
+          "—Si no te toleras a vos mismo, ¿Cómo pretendes que lo hagan otras personas? Y los demás, somos todos nosotros. Dejame que te explique.\n" +
+          "La figura apuró un poco el paso y se sumergió en su explicación.\n";
+  gm.ui.crearEscenarioFiguraVolteada(291, pag85, Fondos.F_LIMBO, Principales.D_DADO_VUELTA,"292", "290");
+  admin.getPlayer(key).setPuntoGuardado(291);
+  admin.guardarPLayers();
+
  }
 
  public void pagina292() {
+
+  String pag85 = "—Hablaste con Gabriel, hablaste con Mirtha. Ambos tocaron un tema que se relaciona más de lo que crees. Mirtha te lo dijo ¿no?\n" +
+          "—Siempre haces algo diferente. Y Gabriel habló acerca de ver todos los intentos por salvarlo, pero él nunca pasó por eso.\n" +
+          "—Casi, sí que lo pasó, nada más no era el mismo Gabriel. El tiempo y el espacio es algo muy complejo, Damián, inentendible incluso para nosotros que tenemos la capacidad de viajar a través de él. Las líneas temporales se mezclan constantemente entre sí, chocan con otras alternativas. Se crean y se destruyen, todas son reales y al mismo tiempo, ninguna lo es.\n" +
+          "—Es por eso por lo que el Gabriel que detuvo la huelga y se llevó a Gengis fue el mismo que nosotros tuvimos que ir a investigar.\n";
+  gm.ui.crearEscenarioUnPersonaje(292, pag85, Fondos.F_LIMBO, Principales.D_COSTADO,"293", "291");
+  admin.getPlayer(key).setPuntoGuardado(292);
+  admin.guardarPLayers();
 
  }
 
  public void pagina293() {
 
+  String pag85 = "—Exacto, muy bien. Yapeyú es un lugar con una carga temporal muy fuerte. En algún momento, hace mucho, la versión original de Damián y Gabriel fueron a la COMIC CON, pero quedaron atrapados en un bucle temporal. Todo el tiempo pasaba lo mismo y siempre Gabriel nos terminaba matando. Pero durante un tiempo, luego de que nos causara las heridas que tenemos, me di cuenta de que la mejor forma de detenerlo era evitando que descubra el DeLorean. En ocasiones me seguías y eras vos el que viajabas en el tiempo, pero siempre volvía a pasar. Hasta que un día, no me seguiste y entonces tuve que asesinar a Gabriel.\n" +
+          "—¿Pero después de mí no tuviste que detener a ningún otro Damián?\n" +
+          "—No, eso es lo curioso. Después que apareciste dejaron de venir Damianes nuevos y solo me enfocaba en vos. \n" +
+          "Pero ahí pasó lo de los sueños. Gabriel y vos están destinados a repetir este ciclo, por eso empezaron a comunicarse mientras dormían. Por lo general, después de crear la YTP, esa versión de Damián muere y todo vuelve a empezar. Pero esta vez yo estaba ahí, y también podía entrar en tus sueños.\n";
+  gm.ui.crearEscenarioUnPersonaje(293, pag85, Fondos.F_LIMBO, Principales.D_COSTADO,"294", "292");
+  admin.getPlayer(key).setPuntoGuardado(293);
+  admin.guardarPLayers();
+
  }
 
  public void pagina294() {
+
+  String pag85 = "Abriste los ojos y detuviste la marcha, sorprendido ante la revelación de tu contraparte.\n" +
+          "—¡¿Creamos la YTP?! \n" +
+          "—Si, claro. Pero siempre reseteábamos la línea y al haber muerto, quedaba en manos de Mirtha, quien se encargaba de manejarla y estructurarla hasta que Manuel estuviese listo para dirigirla. \n";
+  gm.ui.crearEscenarioFiguraVolteada(294, pag85, Fondos.F_LIMBO, Principales.D_DADO_VUELTA,"295", "293");
+  admin.getPlayer(key).setPuntoGuardado(294);
+  admin.guardarPLayers();
 
  }
 
  public void pagina295() {
 
+  String pag85 = "Pero todo esto de los sueños, las hojas, era en palabras de la propia Mirtha algo sin precedentes. Creo que ella sabía que esta vez iba a ser diferente.\n" +
+          "—Y por eso confió en mi para darme la carta, bien, entiendo. Pero esto todavía no me responde ¿Qué puedo hacer? Gabriel prácticamente controla el mundo, ¿cómo voy a derrocar a los conquistadores que repartió por todos lados?\n" +
+          "—La libertad nunca se puede detener, combatí el fuego con agua. Apaga las llamas de la represión con el espíritu de la libertad.\n" +
+          "Con eso dicho, la figura siguió su camino mientras se alejaba de vos.\n";
+  gm.ui.crearEscenarioUnPersonaje(295, pag85, Fondos.F_LIMBO, Principales.D_COSTADO,"296", "294");
+  admin.getPlayer(key).setPuntoGuardado(295);
+  admin.guardarPLayers();
+
  }
 
  public void pagina296() {
 
+  String pag85 = "—¿A dónde vas? \n" +
+          "—No pretendas que me voy a quedar acá para siempre, los demás me estan esperando. \n" +
+          "Ahora todo está en tus manos. Tan solo tenes que decidir qué vas a hacer y una vez lo hagas, seguir caminando. \n" +
+          "Tarde o temprano vas a encontrar la salida… o la entrada.\n";
+  gm.ui.crearEscenarioUnPersonaje(296, pag85, Fondos.F_LIMBO, Principales.D_COSTADO,"297", "295");
+  admin.getPlayer(key).setPuntoGuardado(296);
+  admin.guardarPLayers();
+
  }
 
- public void pagina297() {
+ public void pagina297(){
+
+  String pag85 =   "Mientras veías como se alejaba, se voltea una última vez. Debido a la distancia que los separaba, el Damián del futuro tuvo que levantar un poco la voz\n" +
+          "—Una cosa más Dami. Si lo vas a hacer, hacelo también por nosotros, ¿si?\n" +
+          "En ese momento, al rededor de la figura empezaron a aparecer decenas de versiones tuyas. Tenían diferentes alturas, edades, algunos con cicatrices, otros no. \n"+
+          "Todos te observaban en silencio, pero podías sentir como el peso de la vida y la historia de todos ellos recaía sobre vos, como si fueras la última esperanza de que todo lo que perdieron y sacrificaron no haya sido en vano\n"+
+          "Damián se da la media vuelta y retoma su camino. Todas tus demás versiones te comparten una última mirada, y como si fuesen llevados por una leve brisa, desaparecen tan rápido como llegaron";
+  gm.ui.crearEscenarioFiguraVolteada(297, pag85, Fondos.F_LIMBO, Principales.D_DADO_VUELTA,"298", "296");
+  admin.getPlayer(key).setPuntoGuardado(297);
+  admin.guardarPLayers();
 
  }
 
  public void pagina298() {
 
+  String pag85 = "Paz y Manuel habían recorrido la orilla del río, buscando alguna señal de la persona con la que habían estado soñando. Pero luego de caminar un rato sin ningún tipo de resultado, cansados y con los pies mojados habían planteado desistir.\n" +
+          "—Y es que si, Paz, ¿Qué hacemos acá? ¿Buscar a una persona porque soñamos con eso? Es una ridiculez importante.\n" +
+          "—Ya sé, pero no podés negar que esto tiene que significar algo más, yo sé que es así.\n";
+  gm.ui.crearEscenarioDosPersonajes(298, pag85, Fondos.F_EXTERIOR, Principales.M_NOJAU, Principales.P_COSTADO,"299", "297");
+  admin.getPlayer(key).setPuntoGuardado(298);
+  admin.guardarPLayers();
+
  }
 
  public void pagina299() {
+
+  String pag85 = "Y fue ahí cuando te vieron, tirado a un costado del río. Tu cara mostraba una cicatriz donde Gabriel te había cortado y en tu abdomen y pecho se veían la marca de varias puñaladas.";
+  gm.ui.crearEscenarioSolo(299, pag85, Fondos.F_EXTERIOR,"300", "298");
+  admin.getPlayer(key).setPuntoGuardado(299);
+  admin.guardarPLayers();
 
  }
 
  public void pagina300() {
 
+     String pag85 = "—¿Ves? Esta tieso el pibe ya — dijo Manuel mientras ambos se acercaban para alejar tu cuerpo del río.\n" +
+             "Tu cuerpo denotaba un maltrato y un deterioro temprano. Tu piel era ahora de un color gris, apagado una vez la sangre dejó de recorrer tus venas.\n";
+     gm.ui.crearEscenarioDosPersonajes(300, pag85, Fondos.F_EXTERIOR, Principales.M_COSTADO_DER, Principales.P_FRENTE,"301", "299");
+     admin.getPlayer(key).setPuntoGuardado(300);
+     admin.guardarPLayers();
+
  }
 
  public void pagina301() {
+
+     String pag85 = "—La imagen no era nada alentadora, pero como lo habían soñado, tus ojos se movían de manera desenfrenada.\n" +
+             "Abogada y policía se descalzaron, arremangaron sus pantalones y fueron hasta donde te encontrabas, preparados para sacar tu cuerpo del río. Paz le contestó a Manuel.\n" +
+             "—No sé, pero ayúdame a sacarlo para que no…\n";
+     gm.ui.crearEscenarioDosPersonajes(301, pag85, Fondos.F_EXTERIOR, Principales.M_SERIO, Principales.P_COSTADO,"302", "300");
+     admin.getPlayer(key).setPuntoGuardado(301);
+     admin.guardarPLayers();
 
  }
 
  public void pagina302() {
 
+     String pag85 = "En el momento que entraron en contacto con vos, una serie de imágenes empezó a atravesar su mente. Los recuerdos de todo lo sucedido como agentes de la YTP volvían a aparecer. Todo el año con vos y lo anterior a eso, sus versiones de tu línea temporal se fundían con los que te rescataban.\n" +
+             " Manuel y Paz se miraron y sin decir nada, se entendieron.\n";
+     gm.ui.crearEscenarioDosPersonajes(302, pag85, Fondos.F_EXTERIOR, Principales.M_COSTADO_DER, Principales.P_COSTADO,"303", "301");
+     admin.getPlayer(key).setPuntoGuardado(302);
+     admin.guardarPLayers();
+
  }
 
  public void pagina303() {
+
+     String pag85 = "—Dios, Damián ¿Qué quisiste hacer? — pregunto Paz al aire mientras te observaba, deseando que pudieras darle una respuesta.";
+     gm.ui.crearEscenarioUnPersonaje(303, pag85, Fondos.F_EXTERIOR, Principales.P_FRENTE,"304", "302");
+     admin.getPlayer(key).setPuntoGuardado(303);
+     admin.guardarPLayers();
 
  }
 
  public void pagina304() {
 
+     String pag85 = "Caminabas por el enorme vacío, esta vez en completa soledad. \n" +
+             "Habías decidido que no ibas a permitir que esta línea temporal sufra las consecuencias de tu ego y tu testarudez. El otro Damián te había dicho que ibas a llegar a donde quisieras cuando hubieras decidido que hacer. ";
+     gm.ui.crearEscenarioSolo(304, pag85, Fondos.F_LIMBO, "305", "303");
+     admin.getPlayer(key).setPuntoGuardado(304);
+     admin.guardarPLayers();
+
  }
 
  public void pagina305() {
+
+     String pag85 = "Seguiste el camino invisible, confiando en las palabras de la figura. En lo que parecía una eternidad, despojado del tiempo y de cualquier referencia de cuanto habías pasado en ese lugar, comenzaste a pensar cuales eran tus opciones, como proseguir una vez vuelvas.";
+     gm.ui.crearEscenarioSolo(305, pag85, Fondos.F_LIMBO, "306", "304");
+     admin.getPlayer(key).setPuntoGuardado(305);
+     admin.guardarPLayers();
 
  }
 
  public void pagina306() {
 
+  String pag85 = "Mientras intentabas idear alguna estrategia o plan, te pusiste a pensar en tus compañeros. Pensabas en cuanto te serviría su ayuda en un momento tan difícil como el que se aproximaba, enojado con vos mismo por haber tardado tanto en comprender cuan útil era su compañía y experiencia.";
+  gm.ui.crearEscenarioSolo(306, pag85, Fondos.F_LIMBO, "307", "305");
+  admin.getPlayer(key).setPuntoGuardado(306);
+  admin.guardarPLayers();
+
  }
 
  public void pagina307() {
+
+  String pag85 = "Te lamentabas en silencio tus decisiones y el final que habían tenido ellos. Repetías las escenas en tu cabeza, pensando en las cosas que pudiste hacer diferente. \n" +
+          "Caminando con la vista puesta en el piso, blanco y deslumbrante, escuchas unas voces en la distancia.\n" +
+          "Levantas la mirada, y a lo lejos, en un horizonte desdibujado, podías observar una puerta sin marco, en medio de la nada.\n";
+  gm.ui.crearEscenarioSolo(307, pag85, Fondos.F_LIMBO, "308", "306");
+  admin.getPlayer(key).setPuntoGuardado(307);
+  admin.guardarPLayers();
 
  }
 
  public void pagina308() {
 
+  String pag85 = "A medida que te acercabas, empezaste a vislumbrar mejor lo que había al otro lado. A través de ella podías ver a Manuel y Paz a la orilla del río, mirándote. Extrañado, te acercaste hasta la extraña visión con cierta precaución. Una vez estabas frente a él, veías como unas partículas luminosas se desprendían de tu cuerpo para cruzar hacia el otro lado. Imitando los haces, sumergís tu cabeza por el marco y pasas a través del portal. \n" +
+          "\n" +
+          "Entonces, todo se conectó.\n";
+  gm.ui.crearEscenarioSolo(308, pag85, Fondos.F_LIMBO, "309", "307");
+  admin.getPlayer(key).setPuntoGuardado(308);
+  admin.guardarPLayers();
+
  }
 
  public void pagina309() {
+
+  String pag85 = "—Tranquilo pibe, tranquilo. Respira, no trates de levantarte.\n" +
+          "Manuel te sostenía en el lugar, estabas tosiendo y muy agitado. Te costaba mucho abrir tus ojos y sentías todo tu cuerpo adolorido.\n";
+  gm.ui.crearEscenarioUnPersonaje(309, pag85, Fondos.F_EXTERIOR, Principales.M_NOJAU,"310", "308");
+  gm.ui.reproductorUI.cargarSonido("SoundFX/5 respiracion agitada.wav");
+  gm.ui.reproductorUI.reproducirSonido();
+  admin.getPlayer(key).setPuntoGuardado(309);
+  admin.guardarPLayers();
 
  }
 
  public void pagina310() {
 
+  String pag85 = "—¿Manuel? ¿Paz? \n" +
+          "Ambos te dirigieron una cálida sonrisa y Paz te dijo.\n" +
+          "—Hola, Dami. Paso mucho tiempo, ¿no? ¿Qué te parece si nos pones al día?\n";
+  gm.ui.crearEscenarioUnPersonaje(310, pag85, Fondos.F_EXTERIOR, Principales.P_FRENTE,"311", "309");
+  admin.getPlayer(key).setPuntoGuardado(310);
+  admin.guardarPLayers();
+
  }
+
 
  public void pagina311() {
 

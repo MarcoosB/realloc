@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 
 
 public class UI {
@@ -149,7 +150,6 @@ public class UI {
         }
     }
 
-
     public void createBackground(int indice, String rutaDeImagenFondo) /// Esta funcion recibe el numero de indice del array y el path de la imagen
     {
         // Espacio del fondo
@@ -170,6 +170,7 @@ public class UI {
 
 
     }
+
 
     public void crearObjeto(int indice, String rutaImagenPersonaje) /// Esta funcion pide por parametro X,Y,Alto y Ancho del ImageIcon y la ruta de la imagen. Ademas del indice del fondo
     {
