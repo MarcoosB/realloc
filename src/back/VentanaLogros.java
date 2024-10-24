@@ -1,21 +1,21 @@
 package back;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 public class VentanaLogros {
     private JPanel panel1;
     private JButton salirButton;
+    private JScrollPane Logro;
     private JTextArea textArea1;
 
-    public VentanaLogros(Admin admin,String key) {
+
+    public VentanaLogros(Admin admin, String key) {
         JFrame window = new JFrame();
         window.setTitle("Logros desbloqueados");
         window.setContentPane(panel1);
@@ -23,13 +23,25 @@ public class VentanaLogros {
         window.setResizable(false);
         window.setVisible(true);
 
-       HashMap hashMap = admin.getPlayer(key).getLogros().getHashMap();
 
-        JTextArea textArea = new JTextArea();
-        hashMap.forEach((clave, value) -> textArea.append(clave + ": " + value + "\n"));
 
-        JScrollPane scrollPane = new JScrollPane(textArea);
-        window.add(scrollPane, BorderLayout.CENTER);
+
+        List<Logro> a = new ArrayList<>(admin.getPlayer(key).verLogros());
+        textArea1.setEditable(false);
+        textArea1.setRows(a.size());
+
+        StringBuilder sb = new StringBuilder();
+        for (Logro elemento : a) {
+             sb.append("Titulo: ").append(elemento.getLogrosTitle()).append("\n").append("Descripcion: ").append(elemento.getDescripcion()).append("\n\n");
+        }
+
+        // Mostrar el texto en el JTextArea
+        textArea1.setText(sb.toString());
+
+
+
+        if (sb.isEmpty()) textArea1.setText("Todavia no has desbloqueado logros.");
+
 
 
         salirButton.addActionListener(new ActionListener() {
@@ -42,20 +54,14 @@ public class VentanaLogros {
 
     }
 
-
-        /*
-        List<Logro> a= new ArrayList<>(admin.getPlayer(key).verLogros());
-        textArea1=new JTextArea();
-        textArea1.setEditable(false);
-
-        System.out.println(a.toString());
-
-        if(a.isEmpty())textArea1.setText("Todavia no has desbloqueado logros.");
-        else textArea1.setText(a.toString());
-
-
-
-    }
-   */
-
 }
+
+
+
+
+
+
+
+
+
+
